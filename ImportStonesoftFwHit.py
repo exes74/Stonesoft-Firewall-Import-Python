@@ -12,12 +12,7 @@ import shutil
 #MANUAL FILE CREATED BY COPY/PASTING the DATA OF THE FW COUNTER
 filename = sys.argv[1]
 #NAME OF THE FW
-fwNameTmp = sys.argv[2]
-
-if fwNameTmp.lower() == 'fo' : 
-	fwName='S2E Front Office'
-elif fwNameTmp.lower() == 'partenaire' :
-	fwName='S2E Partenaire'
+fwName = sys.argv[2]
 
 #GetGlobalValue (id scan, date import...)
 #date 
