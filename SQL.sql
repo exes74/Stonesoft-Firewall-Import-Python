@@ -65,3 +65,11 @@ CREATE TABLE IF NOT EXISTS `firewall_flow_matrix_histo` (
   `ref` varchar(255) COLLATE utf8_general_mysql500_ci NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=22125 DEFAULT CHARSET=utf8 COLLATE=utf8_general_mysql500_ci;
 
+---FLOW APPROVAL
+CREATE TABLE IF NOT EXISTS `flow_approval` (
+  `id` int(11) NOT NULL,
+  `need_ref` text COLLATE utf8_general_mysql500_ci NOT NULL,
+  `compliant` varchar(50) COLLATE utf8_general_mysql500_ci NOT NULL,
+  `validated` varchar(50) COLLATE utf8_general_mysql500_ci NOT NULL,
+  `dateValidation` date NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_general_mysql500_ci;
